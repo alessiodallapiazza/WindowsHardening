@@ -25,7 +25,7 @@ if ($WindowsBuild -eq "18362"){
     Write-Host "`nWindows Build seems to be 1903."
 }
 elseif ($WindowsBuild -lt "18362") {
-    Write-Warning "`nUpdate Windows to build 1903 before running this script" -
+    Write-Warning "`nUpdate Windows to build 1903 before running this script"
 }
 else {
     Write-Host "`nWindows build seems to be higher than 1903."
