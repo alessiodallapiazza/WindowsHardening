@@ -6,7 +6,7 @@ if (-NOT([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentit
     Write-Warning -Message "The script requires elevation. Run as admin"
     break
 }
-## Check if reboot is required
+
 function reboot_required {
     $CBSRebootKey = Get-ChildItem "HKLM:\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing\RebootPending" -ErrorAction Ignore
     $WURebootKey = Get-Item "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\RebootRequired" -ErrorAction Ignore
